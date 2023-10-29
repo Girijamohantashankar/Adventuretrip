@@ -1,0 +1,57 @@
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+.title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #159ad3;
+    --color-3: #a74644;
+}
+
+.title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #0fd6bf;
+    --color-3: #e416d3;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+.ul-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul-item li{
+    color: #fff;
+    text-decoration: none;
+}
+.ul-item li:hover{
+    text-decoration: none;
+    color: red;
+}
