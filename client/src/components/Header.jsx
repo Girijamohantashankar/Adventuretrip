@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className='bg-slate-800 shadow-md'>
       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
-        <Link to='/'>
+        <Link to={'/search'}>
           <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
           <span className="title-word title-word-1">Adventure</span>
               <span className="title-word title-word-2">Trip</span>
@@ -47,7 +47,7 @@ export default function Header() {
           </button>
         </form>
         <ul className='flex gap-4 ul-item'>
-          <Link to={'/search'} className='Link'>
+          <Link to='/' className='Link'>
             <li className='hidden sm:inline text-slate-700'>
               Home
             </li>
